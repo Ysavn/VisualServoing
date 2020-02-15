@@ -1,0 +1,10 @@
+1. cd /etc/local/src/bcwc_pcie
+2. sudo depmod
+3. sudo modprobe -r bdc_pci
+4. sudo modprobe facetimehd
+5. cd ~/catkin_ws/devel
+6. source setup.bash
+7. cd ../src/usb_cam/launch
+8. roslaunch usb_cam-test.launch (shows webcam image in /usb_cam/image_raw topic)
+
+#Note: Need to run automate running of steps 1 to 6 so as to avoid manually doing these steps everytime
