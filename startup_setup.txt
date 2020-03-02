@@ -1,3 +1,4 @@
+#starting the usb_camera
 1. cd /etc/local/src/bcwc_pcie
 2. sudo depmod
 3. sudo modprobe -r bdc_pci
@@ -6,5 +7,9 @@
 6. source setup.bash
 7. cd ../src/usb_cam/launch
 8. roslaunch usb_cam-test.launch (shows webcam image in /usb_cam/image_raw topic)
+
+#starting the node "ar_track_alvar" for tracking ARTags
+1. cd /opt/ros/melodic/share/ar_track_alvar/launch
+2. roslaunch ar_tracker_webcam.launch
 
 #Note: Need to run automate running of steps 1 to 6 so as to avoid manually doing these steps everytime
